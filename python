@@ -1,0 +1,13 @@
+import pyautogui
+import time
+file1 =open("animals.txt","r")
+name =["firnd1 ","friend2 ","friend3 ","friend4 "]
+time.sleep(5)
+for i in file1:
+    time.sleep(1)
+    for x in name:
+        pyautogui.write(x+i)
+        time.sleep(1)
+        pyautogui.press("Enter")
+        time.sleep(1)
+file1.close()
